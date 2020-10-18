@@ -1,8 +1,8 @@
 # Automation testing automationpractice.com
 Smoke Automated Tests for automationpractice.com
 
-The project contains automation tests of Smoke Suite for automationpractice.com
-Registration, Sign in/Sign Out, Search and Shop flows are covered by this automted Smoke Suite
+The project contains automation tests of Smoke Suite for automationpractice.com <br>
+<b>Registration</b>, <b>Sign in/Sign Out</b>, <b>Search</b> and <b>Shop</b> flows are covered by this automted Smoke Suite
 
 Framework used for automating is Protractor
 
