@@ -1,5 +1,6 @@
 'use strict';
 let number = Date.now().toString();
+/* Test Data */
 var firstname = 'Aid'; var lastname = 'Hodzic'; var password = 'Aa123456'; var day = 13; var month = 2; var year = 1997; var company = 'Atlantbh';
 var address1 = 'Adresa 1'; var address2 = 'Adresa 2'; var city = 'Sarajevo'; var state = 13; /*id for Illinois state */ var zipcode = '71000';
 var additionalInformation = 'Additional information'; var phone = 123456789; var mobilePhone = 123456789; var alias = 'My new address'

@@ -13,6 +13,7 @@ var Page = function () {
         browser.wait(EC.visibilityOf(element), defaultTimeout)
         element.click();
     }
+    /* Below functions are for order item flow; Separated in case change in flow occurs (easier change of the tests) */
     this.hoverOverElement = function (element) {
         browser.actions().mouseMove(element).perform()
     }

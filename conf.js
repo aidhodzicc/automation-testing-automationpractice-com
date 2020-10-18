@@ -5,9 +5,7 @@ exports.config = {
   specs: ['./Specs/login.specs.js', './Specs/registration.specs.js', './Specs/shop.specs.js', './Specs/search.specs.js'],
   multiCapabilities: [{
     'browserName': 'chrome'
-  }], //  {
-  //'browserName': 'MicrosoftEdge'
-  //}],
+  }],
   jasmineNodeOpts: { defaultTimeoutInterval: 100000 },
   onPrepare: function () {
     browser.manage().window().maximize();

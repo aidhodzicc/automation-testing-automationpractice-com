@@ -42,6 +42,7 @@ Page.prototype = Object.create({},
         mobilePhoneNumberPlaceholder: { get: function () { return element(by.id('phone_mobile')); } },
         addressAliasPlaceholder: { get: function () { return element(by.id('alias')); } },
         registrationButton: { get: function () { return element(by.id('submitAccount')); } },
+        /* Registration function - gets all the strings and register account with particular data */
         registerAccount: {
             value: function (email, firstname, lastname, password, day, month, year, company, address1, address2, city, state, zipcode, additionalInformation, phone, mobilePhone) {
                 this.emailRegistrationPlaceholder.sendKeys(email);

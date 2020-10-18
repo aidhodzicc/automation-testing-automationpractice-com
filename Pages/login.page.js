@@ -5,9 +5,11 @@ var Page = function () {
     browser.get('http://automationpractice.com/index.php');
 
     this.goToLogin = function () { this.signIn.click() }
+    /* Waiting for element to be visible, using expected conditions */ 
     this.waitForElement = function (element) {
         browser.wait(EC.visibilityOf(element), defaultTimeout)
     }
+    /* Sign in function - will use it in other tests */
     this.signInToShop = function (email, password) {
         this.waitForElement(this.signIn)
         this.emailPlaceholder.sendKeys(email)
@@ -15,7 +17,7 @@ var Page = function () {
         this.signInButton.click()
     }
 };
-
+/* Defining page elements */
 Page.prototype = Object.create({},
     {
         signIn: { get: function () { return element(by.className("login")); } },

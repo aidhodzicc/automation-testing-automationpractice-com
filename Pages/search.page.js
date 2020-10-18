@@ -15,6 +15,7 @@ Page.prototype = Object.create({},
         serachButton: { get: function () { return element(by.name('submit_search')); } },
         alertWarningSearch: { get: function () { return element(by.xpath("//p[contains(text(),'No results were found')]")); } },
         productName: { get: function () { return element(by.xpath("//li[1]//div[1]//div[2]//h5[1]")); } },
+        /* Function for search - gets a string and search by it */
         searchForItem: {
             value: function (searchString) {
                 this.searchPlaceholder.sendKeys(searchString)

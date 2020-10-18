@@ -8,6 +8,7 @@ describe('automationpractice.com login page', function () {
     beforeEach(function () {
         page = new Page();
     });
+    /* Combined two tests in one for better performance and to avoid redudancy */
     describe('Sign in to the application', function () {
         it('Should do a successful sign in and sign out', function () {
             page.goToLogin();
